@@ -1,0 +1,19 @@
+class Car:
+    def __init__(self, make, model):
+        self.__make = make
+        self.__model = model
+
+    def __start_engine(self):
+        print("Engine started!")
+
+    def drive(self):
+        self.__start_engine()  
+        print(f"Driving {self.__make} {self.__model}.")
+
+
+my_car1 = Car("Toyota", "Camry")
+my_car2 = Car("Honda", "Civic Type R")
+
+
+my_car1.drive() 
+my_car2.drive()
